@@ -1,0 +1,485 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Oct 21 09:37:31 2026
+# Process ID: 9696
+# Current directory: C:/Users/user/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10220
+# Log file: C:/Users/user/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/user/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+cexit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 10:48:34 2026...
+NFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 1029.285 ; gain = 0.000
+file mkdir C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new
+close [ open C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/MainControl.v w ]
+add_files C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/MainControl.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/ALUControl.v w ]
+add_files C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/ALUControl.v
+update_compile_order -fileset sources_1
+file mkdir C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/ALUControl_tb.v w ]
+add_files -fileset sim_1 C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/ALUControl_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/MainControl_tb.v w ]
+add_files -fileset sim_1 C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/MainControl_tb.v
+update_compile_order -fileset sim_1
+set_property top MainControl_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MainControl_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MainControl_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/MainControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/MainControl_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainControl_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.285 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+"xelab -wto 3ba7f76140694da1838955ec048137a0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MainControl_tb_behav xil_defaultlib.MainControl_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3ba7f76140694da1838955ec048137a0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MainControl_tb_behav xil_defaultlib.MainControl_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/MainControl.v" Line 7. Module MainControl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/MainControl.v" Line 7. Module MainControl doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MainControl
+Compiling module xil_defaultlib.MainControl_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MainControl_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim/xsim.dir/MainControl_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 21 09:52:54 2026...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1029.285 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MainControl_tb_behav -key {Behavioral:sim_1:Functional:MainControl_tb} -tclbatch {MainControl_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source MainControl_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+---- Starting MainControl tests ----
+Output order: RegWrite ALUSrc MemRead MemWrite MemtoReg Branch ALUOp
+PASS: ADD | opcode=0110011 | outputs=10000010
+PASS: SUB | opcode=0110011 | outputs=10000010
+PASS: SLL | opcode=0110011 | outputs=10000010
+PASS: SRL | opcode=0110011 | outputs=10000010
+PASS: AND | opcode=0110011 | outputs=10000010
+PASS: OR | opcode=0110011 | outputs=10000010
+PASS: XOR | opcode=0110011 | outputs=10000010
+PASS: ADDI | opcode=0010011 | outputs=11000000
+PASS: LW | opcode=0000011 | outputs=11101000
+PASS: LH | opcode=0000011 | outputs=11101000
+PASS: LB | opcode=0000011 | outputs=11101000
+PASS: SW | opcode=0100011 | outputs=01010000
+PASS: SH | opcode=0100011 | outputs=01010000
+PASS: SB | opcode=0100011 | outputs=01010000
+PASS: BEQ | opcode=1100011 | outputs=00000101
+PASS: UNKNOWN opcode (safe default) | opcode=1111111 | outputs=00000000
+---- MainControl tests complete ----
+$finish called at time : 160 ns : File "C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/MainControl_tb.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MainControl_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1029.285 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.285 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MainControl_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MainControl_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/MainControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/MainControl_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainControl_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+"xelab -wto 3ba7f76140694da1838955ec048137a0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MainControl_tb_behav xil_defaultlib.MainControl_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3ba7f76140694da1838955ec048137a0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MainControl_tb_behav xil_defaultlib.MainControl_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MainControl
+Compiling module xil_defaultlib.MainControl_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MainControl_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MainControl_tb_behav -key {Behavioral:sim_1:Functional:MainControl_tb} -tclbatch {MainControl_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source MainControl_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+---- Starting MainControl tests ----
+Output order: RegWrite ALUSrc MemRead MemWrite MemtoReg Branch ALUOp
+PASS: ADD | opcode=0110011 | outputs=10000010
+PASS: SUB | opcode=0110011 | outputs=10000010
+PASS: SLL | opcode=0110011 | outputs=10000010
+PASS: SRL | opcode=0110011 | outputs=10000010
+PASS: AND | opcode=0110011 | outputs=10000010
+PASS: OR | opcode=0110011 | outputs=10000010
+PASS: XOR | opcode=0110011 | outputs=10000010
+PASS: ADDI | opcode=0010011 | outputs=11000000
+PASS: LW | opcode=0000011 | outputs=11101000
+PASS: LH | opcode=0000011 | outputs=11101000
+PASS: LB | opcode=0000011 | outputs=11101000
+PASS: SW | opcode=0100011 | outputs=01010000
+PASS: SH | opcode=0100011 | outputs=01010000
+PASS: SB | opcode=0100011 | outputs=01010000
+PASS: BEQ | opcode=1100011 | outputs=00000101
+PASS: UNKNOWN opcode (safe default) | opcode=1111111 | outputs=00000000
+---- MainControl tests complete ----
+$finish called at time : 160 ns : File "C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/MainControl_tb.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MainControl_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1029.285 ; gain = 0.000
+close [ open C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/switches.v w ]
+add_files C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/switches.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/leds.v w ]
+add_files C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/leds.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/debouncer.v w ]
+add_files C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/debouncer.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/top_control_path.v w ]
+add_files C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/top_control_path.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/user/Downloads/lab_9/lab_9.srcs/constrs_1
+file mkdir C:/Users/user/Downloads/lab_9/lab_9.srcs/constrs_1/new
+close [ open C:/Users/user/Downloads/lab_9/lab_9.srcs/constrs_1/new/top_control_path.xdc w ]
+add_files -fileset constrs_1 C:/Users/user/Downloads/lab_9/lab_9.srcs/constrs_1/new/top_control_path.xdc
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MainControl_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MainControl_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+"xelab -wto 3ba7f76140694da1838955ec048137a0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MainControl_tb_behav xil_defaultlib.MainControl_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3ba7f76140694da1838955ec048137a0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MainControl_tb_behav xil_defaultlib.MainControl_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MainControl_tb_behav -key {Behavioral:sim_1:Functional:MainControl_tb} -tclbatch {MainControl_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source MainControl_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+---- Starting MainControl tests ----
+Output order: RegWrite ALUSrc MemRead MemWrite MemtoReg Branch ALUOp
+PASS: ADD | opcode=0110011 | outputs=10000010
+PASS: SUB | opcode=0110011 | outputs=10000010
+PASS: SLL | opcode=0110011 | outputs=10000010
+PASS: SRL | opcode=0110011 | outputs=10000010
+PASS: AND | opcode=0110011 | outputs=10000010
+PASS: OR | opcode=0110011 | outputs=10000010
+PASS: XOR | opcode=0110011 | outputs=10000010
+PASS: ADDI | opcode=0010011 | outputs=11000000
+PASS: LW | opcode=0000011 | outputs=11101000
+PASS: LH | opcode=0000011 | outputs=11101000
+PASS: LB | opcode=0000011 | outputs=11101000
+PASS: SW | opcode=0100011 | outputs=01010000
+PASS: SH | opcode=0100011 | outputs=01010000
+PASS: SB | opcode=0100011 | outputs=01010000
+PASS: BEQ | opcode=1100011 | outputs=00000101
+PASS: UNKNOWN opcode (safe default) | opcode=1111111 | outputs=00000000
+---- MainControl tests complete ----
+$finish called at time : 160 ns : File "C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/MainControl_tb.v" Line 96
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MainControl_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.285 ; gain = 0.000
+archive_project C:/Users/user/Downloads/lab_9.xpr.zip -temp_dir C:/Users/user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9696-DESKTOP-DUMUOR7 -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9696-DESKTOP-DUMUOR7' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9696-DESKTOP-DUMUOR7/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/user/Downloads/lab_9.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+set_property top ALUControl_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUControl_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUControl_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Downloads/lab_9/lab_9.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/ALUControl_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+"xelab -wto 3ba7f76140694da1838955ec048137a0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUControl_tb_behav xil_defaultlib.ALUControl_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3ba7f76140694da1838955ec048137a0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUControl_tb_behav xil_defaultlib.ALUControl_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALUControl_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALUControl_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim/xsim.dir/ALUControl_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 21 10:50:41 2026...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1076.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/user/Downloads/lab_9/lab_9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALUControl_tb_behav -key {Behavioral:sim_1:Functional:ALUControl_tb} -tclbatch {ALUControl_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source ALUControl_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+---- Starting ALUControl tests ----
+PASS: LW  (ALUOp 00 -> ADD) | ALUOp=00 f3=010 f7=0000000 -> ALUControl=0010
+PASS: LH  (ALUOp 00 -> ADD) | ALUOp=00 f3=001 f7=0000000 -> ALUControl=0010
+PASS: LB  (ALUOp 00 -> ADD) | ALUOp=00 f3=000 f7=0000000 -> ALUControl=0010
+PASS: SW  (ALUOp 00 -> ADD) | ALUOp=00 f3=010 f7=0000000 -> ALUControl=0010
+PASS: SH  (ALUOp 00 -> ADD) | ALUOp=00 f3=001 f7=0000000 -> ALUControl=0010
+PASS: SB  (ALUOp 00 -> ADD) | ALUOp=00 f3=000 f7=0000000 -> ALUControl=0010
+PASS: ADDI, funct7 bit set (ADD) | ALUOp=00 f3=000 f7=0100000 -> ALUControl=0010
+PASS: BEQ (ALUOp 01 -> SUB) | ALUOp=01 f3=000 f7=0000000 -> ALUControl=0110
+PASS: ADD | ALUOp=10 f3=000 f7=0000000 -> ALUControl=0010
+PASS: SUB | ALUOp=10 f3=000 f7=0100000 -> ALUControl=0110
+PASS: SLL | ALUOp=10 f3=001 f7=0000000 -> ALUControl=0100
+PASS: XOR | ALUOp=10 f3=100 f7=0000000 -> ALUControl=0011
+PASS: SRL | ALUOp=10 f3=101 f7=0000000 -> ALUControl=0101
+PASS: OR | ALUOp=10 f3=110 f7=0000000 -> ALUControl=0001
+PASS: AND | ALUOp=10 f3=111 f7=0000000 -> ALUControl=0000
+---- ALUControl tests complete ----
+$finish called at time : 150 ns : File "C:/Users/user/Downloads/lab_9/lab_9.srcs/sim_1/new/ALUControl_tb.v" Line 75
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALUControl_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1085.797 ; gain = 9.094
+launch_runs impl_1 -jobs 4
+[Wed Oct 21 11:16:27 2026] Launched synth_1...
+Run output will be captured here: C:/Users/user/Downloads/lab_9/lab_9.runs/synth_1/runme.log
+[Wed Oct 21 11:16:27 2026] Launched impl_1...
+Run output will be captured here: C:/Users/user/Downloads/lab_9/lab_9.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1288.770 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1969.422 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1969.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1969.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 2071.281 ; gain = 985.484
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2164.668 ; gain = 14.977
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A52A
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Oct 21 11:24:54 2026] Launched impl_1...
+Run output will be captured here: C:/Users/user/Downloads/lab_9/lab_9.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/user/Downloads/lab_9/lab_9.runs/impl_1/top_control_path.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/user/Downloads/lab_9/lab_9.runs/impl_1/top_control_path.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+archive_project C:/Users/user/Downloads/lab_9_final.xpr.zip -temp_dir C:/Users/user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9696-DESKTOP-DUMUOR7 -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9696-DESKTOP-DUMUOR7' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/user/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9696-DESKTOP-DUMUOR7/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
